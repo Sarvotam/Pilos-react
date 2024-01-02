@@ -29,7 +29,7 @@ const UserRegister = () => {
 				// clear fields after submission complete
 				document.getElementById('registration-form').reset()
 				setError({status: true, msg:"Registration Success ", type: 'success'})
-				navigate('/')
+				navigate('/dashboard')
         }else{
           setError({status: true, msg: "Password and password confirmation doesnot match", type: 'error'})
         }
