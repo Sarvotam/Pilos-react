@@ -31,6 +31,7 @@ const PasswordRequest = () => {
 			<>
 				<Grid container justifyContent='center'>
           <Grid item sm={6} xs={12}>
+					<h1>Reset Password</h1>
             <Box component='form' noValidate sx={{ mt: 1 }} id='password-reset-form' onSubmit={handleSubmit}>
               <TextField margin='normal' required fullWidth id='email' name='email' label='Email Address' />
               <Box textAlign='center'>

@@ -5,6 +5,7 @@ import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
 import UserRegistration from "./components/pages/auth/UserRegistration";
 import PasswordRequest from "./components/pages/auth/PasswordRequest";
+import ResetPassword from "./components/pages/auth/ResetPassword";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path='Login' element={<UserRegistration/>} />
             <Route path='passwordRequest' element={<PasswordRequest/>} />
+            <Route path='reset' element={<ResetPassword/>} />
           </Route>
         </Routes>
       </BrowserRouter>
