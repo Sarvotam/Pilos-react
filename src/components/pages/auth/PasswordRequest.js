@@ -1,7 +1,7 @@
 import {Grid, TextField, Button, Box, Alert } from "@mui/material"
 import { useState } from "react";
 
-const PasswordReset = () => {
+const PasswordRequest = () => {
   const [error, setError] = useState({
 		status: false,
 		msg: "",
@@ -44,4 +44,4 @@ const PasswordReset = () => {
 		)
 }
 
-export default PasswordReset
+export default PasswordRequest
