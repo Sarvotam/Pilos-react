@@ -6,6 +6,8 @@ import Contact from "./components/pages/Contact";
 import UserRegistration from "./components/pages/auth/UserRegistration";
 import PasswordRequest from "./components/pages/auth/PasswordRequest";
 import ResetPassword from "./components/pages/auth/ResetPassword";
+// import { Dashboard } from "@mui/icons-material";
+import Dashboard from "./components/pages/Dashboard";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route path='passwordRequest' element={<PasswordRequest/>} />
             <Route path='reset' element={<ResetPassword/>} />
           </Route>
+          <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='*' element={<h1> Error 404 page not found !!! </h1>} />
         </Routes>
       </BrowserRouter>
     </>

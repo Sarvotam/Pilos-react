@@ -11,7 +11,7 @@ const UserLogin = () => {
 		type: ""
 	})
 
-	const navigate = useNavigate();
+		const navigate = useNavigate();
 		const handleSubmit = (e) => {
 			e.preventDefault();
 			// FormData Default from web api [ Could be solved through STATE as well]
@@ -27,7 +27,7 @@ const UserLogin = () => {
 				// clear fields after submission complete
 				document.getElementById('login-form').reset()
 				setError({status: true, msg:"Login Success ", type: 'success'})
-				navigate('/')
+				navigate('/dashboard')
 			} else {
 				setError({ status: true, msg: "All fields are required", type: 'error' })
 			}
