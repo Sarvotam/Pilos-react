@@ -6,6 +6,20 @@ import { NavLink } from 'react-router-dom'
 const UserLogin = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		// FormData Default from web api [ Could be solved through STATE as well]
+		const data = new FormData(e.currentTarget);
+		const actualData ={
+			email: data.get('email'),
+			password: data.get('password'),
+		}
+		// work for validation
+		if(actualData.email && actualData.password){
+		console.log(actualData);
+		// clear fields after submission complete
+		document.getElementById('login-form').reset()
+		}else{
+		console.log("All fields are required");
+		}
 	}
   return (
     <>
