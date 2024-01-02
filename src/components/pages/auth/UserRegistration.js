@@ -33,7 +33,7 @@ const UserRegistration = () => {
         </Grid>
 				<Grid item lg={5} sm={7} xs={12} sx={{}}>
 					<Card sx={{width:'100%', height:'100%'}}>
-						<Box>
+						<Box sx={{mx: 6}}>
 							<Box sx={{borderBottom:1, borderColor:'divider'}}>
 								<Tabs value={value} textColor='secondary' indicatorColor='secondary' onChange={handleChange}>
 									<Tab label='Login' sx={{textTransform:'none', fontWeight:'bold'}}></Tab>
@@ -47,6 +47,10 @@ const UserRegistration = () => {
 								<UserRegister />
 							</TabPanel>
 						</Box>
+						{/* <Box textAlign='center' sx={{mt:2}}>
+							<CodeMode sx={{color: 'purple', fontSize: 100}}/>
+							<Typography variant='h5' sx={{forntWeight: 'bold'}}>Lipi-Infotech</Typography>
+						</Box> */}
 					</Card>
         </Grid>
       </Grid>
