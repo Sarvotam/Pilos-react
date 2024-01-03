@@ -44,7 +44,7 @@ const UserRegister = () => {
 					<TextField margin='normal' required fullWidth id='name' name='name' label='Name' />
 					<TextField margin='normal' required fullWidth id='password' name='password' label='password' type='password' />
 					<TextField margin='normal' required fullWidth id='password_confirmation' name='password_confirmation' label='Confirm Password' type='password' />
-          <FormControlLabel control={<Checkbox value="agree" color="primary" name='tc' id='tc' />} label="I agree to terms and condition." />
+          <FormControlLabel control={<Checkbox value={true} color="primary" name='tc' id='tc' />} label="I agree to terms and condition." />
 					<Box textAlign='center'>
 						<Button type='submit' variant='contained' sx={{ mt: 3, mb: 2, px: 5 }} >Join</Button>
 					</Box>

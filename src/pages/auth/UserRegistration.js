@@ -1,5 +1,5 @@
 import {Grid, Card, Typography, Tabs, Tab, Box} from '@mui/material'
-import Img4 from '../../../images/img4.png'
+import Img4 from '../../images/img4.png'
 import { useState } from 'react';
 import UserLogin from './UserLogin';
 import UserRegister from './UserRegister';

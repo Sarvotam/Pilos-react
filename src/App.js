@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./components/pages/Layout";
+import Layout from "./pages/Layout";
 // import { Home } from "@mui/icons-material";
-import Home from "./components/pages/Home";
-import Contact from "./components/pages/Contact";
-import UserRegistration from "./components/pages/auth/UserRegistration";
-import PasswordRequest from "./components/pages/auth/PasswordRequest";
-import ResetPassword from "./components/pages/auth/ResetPassword";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import UserRegistration from "./pages/auth/UserRegistration";
+import PasswordRequest from "./pages/auth/PasswordRequest";
+import ResetPassword from "./pages/auth/ResetPassword";
 // import { Dashboard } from "@mui/icons-material";
-import Dashboard from "./components/pages/Dashboard";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
